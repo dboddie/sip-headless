@@ -1,0 +1,19 @@
+--- sip-4.13.3/siputils.py.orig	2014-06-11 15:39:27.537739064 +0200
++++ sip-4.13.3/siputils.py	2014-06-11 15:40:10.645739712 +0200
+@@ -745,11 +745,11 @@
+             libdir.extend(self.optional_list("LIBDIR_OPENGL"))
+             libs.extend(self.optional_list("LIBS_OPENGL"))
+ 
+-        if self._qt or self._opengl:
+-            if qt_version < 0x040000 or self._opengl or "QtGui" in self._qt:
+-                incdir.extend(self.optional_list("INCDIR_X11"))
+-                libdir.extend(self.optional_list("LIBDIR_X11"))
+-                libs.extend(self.optional_list("LIBS_X11"))
++        #if self._qt or self._opengl:
++        #    if qt_version < 0x040000 or self._opengl or "QtGui" in self._qt:
++        #        incdir.extend(self.optional_list("INCDIR_X11"))
++        #        libdir.extend(self.optional_list("LIBDIR_X11"))
++        #        libs.extend(self.optional_list("LIBS_X11"))
+ 
+         if self._threaded:
+             libs.extend(self.optional_list("LIBS_THREAD"))

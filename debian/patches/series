@@ -1,0 +1,4 @@
+siputils_no_x11.diff
+siputils_debian_changes.diff
+siputils_objdir_module_fix.diff
+configure.py.patch
